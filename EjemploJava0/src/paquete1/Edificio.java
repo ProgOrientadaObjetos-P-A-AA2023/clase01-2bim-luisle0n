@@ -12,9 +12,13 @@ package paquete1;
 public class Edificio {
     private String nombre;
     private double costo;
-    
+    private double  costo_predio;
     public Edificio(String m){
         nombre = m;
+    }
+
+    public void establecerCosto_predio() {
+        costo_predio = costo*0.002;
     }
     
     public void establecerNombre(String m){
@@ -31,6 +35,9 @@ public class Edificio {
    
     public double obtenerCosto(){
         return costo;
+    }
+     public double obtenerCosto_Previo(){
+        return costo_predio;
     }
 
     @Override
